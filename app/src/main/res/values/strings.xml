@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Measure Clone</string>
+    <string name="dialogTitle1">Saved Records</string>
+    <string name="dialogTitle2">Save Record</string>
+    <string name="insertName">Insert name</string>
+    <string name="SaveStr">Save</string>
+    <string name="ExitStr">Exit</string>
+    <string name="okStr">Ok</string>
+    <string name="measureName">Measure Name</string>
+    <string name="measureValue">999 cm</string>
+    <string name="addNewValue">Add measurement</string>
+    <string name="measure">x m</string>
+    <string name="calculatorExit">Exit</string>
+    <string name="plusMinus">Approximate to &#xb1; 1cm</string>
+</resources>

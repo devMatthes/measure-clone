@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+    <TextView
+        android:id="@+id/measureName"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:text="@string/measureName"
+        android:textColor="#A1A1A1"
+        android:textSize="14sp"
+        android:fontFamily="@font/lato"/>
+
+    <TextView
+        android:id="@+id/measureValue"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textColor="#A1A1A1"
+        android:text="@string/measureValue"
+        android:textSize="14sp"
+        android:fontFamily="@font/lato"/>
+</LinearLayout>

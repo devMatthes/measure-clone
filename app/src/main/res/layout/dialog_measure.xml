@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/saved_recs"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:background="@drawable/saved_recs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultMeasure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="110dp"
+        android:fontFamily="@font/lato"
+        android:text="21 cm"
+        android:textColor="#323232"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/saved_recs"
+        app:layout_constraintEnd_toEndOf="@+id/saved_recs"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/saved_recs"
+        app:layout_constraintTop_toTopOf="@+id/saved_recs" />
+
+    <Button
+        android:id="@+id/btnExitMeasure"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/ic_cross"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/lato"
+        android:paddingTop="5dp"
+        android:paddingBottom="6dp"
+        android:textColor="#323232"
+        app:layout_constraintBottom_toBottomOf="@+id/saved_recs"
+        app:layout_constraintEnd_toEndOf="@+id/saved_recs"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/saved_recs"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnSaveMeasure"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/ic_saved_03"
+        android:fontFamily="@font/lato"
+        android:paddingTop="5dp"
+        android:paddingBottom="6dp"
+        android:textColor="#323232"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/saved_recs"
+        app:layout_constraintEnd_toStartOf="@+id/btnExitMeasure"
+        app:layout_constraintTop_toTopOf="@+id/saved_recs" />
+
+    <TextView
+        android:id="@+id/infoApprox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/lato"
+        android:text="@string/plusMinus"
+        android:textColor="#A1A1A1"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/saved_recs"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="@+id/saved_recs"
+        app:layout_constraintTop_toBottomOf="@+id/resultMeasure" />
+
+    <TextView
+        android:id="@+id/titleCvrtFi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lato"
+        android:text="Feet &amp; inches"
+        android:textColor="#A1A1A1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/saved_recs"
+        app:layout_constraintTop_toBottomOf="@+id/infoApprox" />
+
+    <TextView
+        android:id="@+id/titleCvrtI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato"
+        android:text="Inches"
+        android:textColor="#A1A1A1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/saved_recs"
+        app:layout_constraintTop_toBottomOf="@+id/titleCvrtFi" />
+
+    <TextView
+        android:id="@+id/resultFI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/lato"
+        android:text="8 in"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/saved_recs"
+        app:layout_constraintTop_toBottomOf="@+id/infoApprox" />
+
+    <TextView
+        android:id="@+id/resultF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/lato"
+        android:text="8 in"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/saved_recs"
+        app:layout_constraintTop_toBottomOf="@+id/resultFI" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

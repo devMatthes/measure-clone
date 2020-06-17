@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:color="#1AFFFFFF">
+
+    <View
+        android:id="@+id/saved_recs"
+        android:layout_width="286dp"
+        android:layout_height="160dp"
+        android:background="@drawable/saved_recs"
+        android:color="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="122dp"
+        android:fontFamily="@font/lato_medium"
+        android:text="SAVE RECORD"
+        android:textColor="#323232"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/saved_recs"
+        app:layout_constraintEnd_toEndOf="@+id/saved_recs"
+        app:layout_constraintStart_toStartOf="@+id/saved_recs"
+        app:layout_constraintTop_toTopOf="@+id/saved_recs" />
+
+    <EditText
+        android:layout_width="127dp"
+        android:layout_height="21dp"
+        android:id="@+id/editTextNameSufr"
+        android:hint="@string/insertName"
+        android:layout_weight="2"
+        android:textSize="12sp"
+        android:textColor="#323232"
+        android:background="@drawable/save_etrecname"
+        android:inputType="text"
+        android:fontFamily="@font/lato_light"
+        android:autofillHints=""
+        android:paddingStart="5dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintBottom_toBottomOf="@+id/saved_recs"
+        app:layout_constraintEnd_toEndOf="@+id/saved_recs"
+        app:layout_constraintStart_toStartOf="@+id/saved_recs"
+        app:layout_constraintTop_toTopOf="@+id/saved_recs" />
+
+    <TextView
+        android:id="@+id/surfValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="202dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="79dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/lato_light"
+        android:text="@string/measure"
+        android:textColor="#323232"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/saved_recs"
+        app:layout_constraintEnd_toEndOf="@+id/saved_recs"
+        app:layout_constraintStart_toStartOf="@+id/saved_recs"
+        app:layout_constraintTop_toTopOf="@+id/saved_recs" />
+
+    <Button
+        android:id="@+id/btndialogExit"
+        android:layout_width="72dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="14dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/lato_medium"
+        android:paddingTop="5dp"
+        android:paddingBottom="6dp"
+        android:text="CANCEL"
+        android:textColor="#323232"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/saved_recs"
+        app:layout_constraintEnd_toEndOf="@+id/saved_recs"
+        app:layout_constraintStart_toStartOf="@+id/saved_recs"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btndialogSave"
+        android:layout_width="72dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="14dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/lato_medium"
+        android:paddingTop="5dp"
+        android:paddingBottom="6dp"
+        android:text="SAVE"
+        android:textColor="#323232"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/saved_recs"
+        app:layout_constraintEnd_toEndOf="@+id/saved_recs"
+        app:layout_constraintStart_toEndOf="@+id/btndialogExit"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
