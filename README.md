@@ -10,7 +10,7 @@ Move your device from left to right to detect flat plane such as floor or table 
 
 ### Check how it works 
 
-[Check on Vimeo](https://vimeo.com/user117897308/review/429972805/5a4c2a4303)
+[Check on Vimeo](https://vimeo.com/429972805)
 
 ## Technology 🔧
 
